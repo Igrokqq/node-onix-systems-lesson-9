@@ -8,9 +8,9 @@ import {AppService} from './app.service';
 
 @Module({
   imports: [
-    // BooksModule,
-    // UsersModule,
-    // TypeOrmModule.forRoot(env.databases.mongodb),
+    BooksModule,
+    UsersModule,
+    TypeOrmModule.forRoot(env.databases.mongodb),
   ],
   controllers: [AppController],
   providers: [AppService],
