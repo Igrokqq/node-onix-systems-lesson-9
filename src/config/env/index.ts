@@ -18,8 +18,7 @@ class Env implements IEnvInterface {
                     reconnectTries: Number.MAX_VALUE,
                     reconnectInterval: process.env.MONGODB_RECONNECT_INTERVAL || 1000,
                     database: process.env.MONGODB_DATABASE || 'lesson9',
-                    // entities: ['dist/**/*.entity{.ts,.js}', 'src/**/*.entity{.ts,.js}'],
-                    entities: [UserEntity],
+                    entities: ['dist/**/*.entity{.ts,.js}'],
                     synchronize: true,
                 }
             }
@@ -41,7 +40,7 @@ class Env implements IEnvInterface {
                     reconnectTries: Number.MAX_VALUE,
                     reconnectInterval: process.env.MONGODB_RECONNECT_INTERVAL || 1000,
                     database: process.env.MONGODB_DATABASE || 'lesson9',
-                    entities: [],
+                    entities: ['dist/**/*.entity{.ts,.js}'],
                     synchronize: true,
                 }
             }
@@ -63,7 +62,7 @@ class Env implements IEnvInterface {
                     reconnectTries: Number.MAX_VALUE,
                     reconnectInterval: process.env.MONGODB_RECONNECT_INTERVAL || 1000,
                     database: process.env.MONGODB_DATABASE || 'lesson9',
-                    entities: [],
+                    entities: ['dist/**/*.entity{.ts,.js}'],
                     synchronize: true,
                 }
             }
