@@ -1,6 +1,5 @@
 import { IConfigInterface } from './interfaces/IConfig.interface';
 import { IEnvInterface } from './interfaces/IEnv.interface';
-import { UserEntity } from "../../components/users/entities/user.entity";
 
 class Env implements IEnvInterface {
     public development(): IConfigInterface {
