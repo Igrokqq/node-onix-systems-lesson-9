@@ -17,7 +17,7 @@ class Env implements IEnvInterface {
                     reconnectTries: Number.MAX_VALUE,
                     reconnectInterval: process.env.MONGODB_RECONNECT_INTERVAL || 1000,
                     database: process.env.MONGODB_DATABASE || 'lesson9',
-                    entities: ['dist/**/*.entity{.ts,.js}'],
+                    entities: ['dist/**/*.entity{.ts,.js}', 'src/**/*.entity{.ts,.js}'],
                     synchronize: true,
                 }
             }
